@@ -1,4 +1,4 @@
-# MNIST Classifier
+# Digit recognizer
 
 Нейросеть для распознавания рукописных цифр (MNIST).
 
