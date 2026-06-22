@@ -1,4 +1,3 @@
-
 import numpy as np
 import tensorflow as tf
 import tkinter as tk
@@ -15,6 +14,7 @@ visualization_model = models.Model(
     outputs=[layer.output for layer in conv_layers]
 )
 
+
 # Функции для визуализации
 def get_activations(img_array_28x28x1):
     """Прогоняет картинку через модель и возвращает активации всех слоев"""
@@ -25,7 +25,7 @@ def get_activations(img_array_28x28x1):
 
 def create_heatmap(activation_2d, size=(100, 100)):
     """Превращает двумерный массив активаций в цветную картинку"""
-    #Нормализация
+    # Нормализация
     act_min = activation_2d.min()
     act_max = activation_2d.max()
     if act_max == act_min:
